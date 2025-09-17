@@ -11,7 +11,7 @@ string detectPackages()
     string rpm, flatpak;
 
     try {
-        auto rpmResult = executeShell("rpm -qa | wc -l");
+        auto rpmResult = executeShell("rpm -qa --nodigest --nosignature | wc -l");
         if (rpmResult.status == 0)
             rpm = rpmResult.output.strip();
     } catch(Exception) {}
