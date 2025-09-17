@@ -1,0 +1,11 @@
+{
+    "name": "dfetch",
+    "description": "A utility for displaying system information. Like neofetch and fastfetch but written in D.",
+    "copyright": "Copyright © 2025, Leonardo",
+    "license": "MIT",
+    "targetType": "executable",
+    "sourcePaths": ["source"],
+    "importPaths": ["source"],
+    "dflags": ["-preview=dip1000"],
+    "version": "0.1.0"
+}
